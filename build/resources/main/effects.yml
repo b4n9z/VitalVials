@@ -1,4 +1,4 @@
-speed:
+speed: # key of the effect section, you can change it to anything you want, you can also use same effect to another key with different activation config
   enabled: true # enable/disable the effect
   name: "§bSpeed" # The name of the effect
   effect: "SPEED" # Name of the effect to give (default), don't change if you don't know what it is
@@ -6,7 +6,7 @@ speed:
   maxLevel: 2 # max amplifier/level when upgrading the effect
   particles: false # enable/disable particles when getting effect
   saveEffectData: true # save effect data to the player data (If “false”, the effect can only be activated when “autoActivate” is true and can only be used once and player can't upgrade it)
-  priceType: MAX_HEALTH # the type of price when buying the effect (MAX_HEALTH to buy using MAX HEALTH player or HEALTH_POINTS to buy using HEALTH POINTS player)
+  priceType: MAX_HEALTH # the type of price when buying the effect (MAX_HEALTH to buy using MAX HEALTH player or HEALTH to buy using HEALTH player)
   refundPercentage: 50 # the percentage of the HP refundable (calculate from level 1 effect) after buying the effect (-1 to disable refund)
   autoActivate: true # auto activate the effect, if true effect will be auto activated after buying
   # if false you need set it in activation config
@@ -37,7 +37,7 @@ haste:
   maxLevel: 2
   particles: false
   saveEffectData: true
-  priceType: HEALTH_POINTS
+  priceType: HEALTH
   refundPercentage: -1
   autoActivate: true
   durationPerUpgrade: [-1, -1]
@@ -79,7 +79,7 @@ instant_health:
   maxLevel: 1
   particles: true
   saveEffectData: true
-  priceType: HEALTH_POINTS
+  priceType: HEALTH
   refundPercentage: -1
   autoActivate: false
   durationPerUpgrade: [1]
@@ -93,7 +93,7 @@ instant_damage:
   maxLevel: 1
   particles: true
   saveEffectData: true
-  priceType: HEALTH_POINTS
+  priceType: HEALTH
   refundPercentage: -1
   autoActivate: false
   durationPerUpgrade: [1]
@@ -149,7 +149,7 @@ resistance:
   maxLevel: 2
   particles: false
   saveEffectData: true
-  priceType: HEALTH_POINTS
+  priceType: HEALTH
   refundPercentage: -1
   autoActivate: false
   durationPerUpgrade: [20, 25]

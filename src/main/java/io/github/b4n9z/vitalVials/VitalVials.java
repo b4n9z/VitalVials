@@ -21,7 +21,7 @@ public final class VitalVials extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
 
-        loadMetrics(23923);
+        loadMetrics(27411);
         loadConfigManager();
         loadDataManager();
         loadEffectManager();
