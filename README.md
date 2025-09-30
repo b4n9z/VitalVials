@@ -181,4 +181,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ---
 
-Crafted with ❤️ by b4n9z
+Crafted by b4n9z
