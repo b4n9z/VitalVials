@@ -1,0 +1,38 @@
+name: VitalVials
+version: '1.0.0'
+main: io.github.b4n9z.vitalVials.VitalVials
+api-version: '1.21'
+authors: [ b4n9z ]
+description: A simple plugin that allows you to buy effect using your health.
+
+commands:
+  VitalVials:
+    aliases: [ vv ]
+    usage: /vv <subcommand>
+    description: Main command for the VitalVials plugin
+
+permissions:
+  vv.admin:
+    description: Allows full access to all VitalVials features
+    default: op
+  vv.reload:
+    description: Allows player to reload the plugin
+    default: op
+  vv.shop:
+    description: Allows player to open shop
+    default: op
+  vv.buyEffect:
+    description: Allows player to buy effect
+    default: op
+  vv.scoreboard:
+    description: Allows player to customize their own scoreboard
+    default: op
+  vv.viewStatus:
+    description: Allows player to view their own status
+    default: op
+  vv.refundEffect:
+    description: Allows player to refund their own effect
+    default: op
+  vv.removeData:
+    description: Allows player to remove data, their own and other player data
+    default: op

@@ -1,0 +1,550 @@
+speed: # key of the effect section, you can change it to anything you want, you can also use same effect to another key with different activation config
+  enabled: true # enable/disable the effect
+  name: "§bSpeed" # The name of the effect
+  effect: "SPEED" # Name of the effect to give (default), don't change if you don't know what it is
+  lore: "Get more speed" # lore of the effect (Informational only)
+  maxLevel: 2 # max amplifier/level when upgrading the effect
+  particles: false # enable/disable particles when getting effect
+  saveEffectData: true # save effect data to the player data (If “false”, the effect can only be activated when “autoActivate” is true and can only be used once and player can't upgrade it)
+  priceType: MAX_HEALTH # the type of price when buying the effect (MAX_HEALTH to buy using MAX HEALTH player or HEALTH to buy using HEALTH player)
+  refundPercentage: 50 # the percentage of the HP refundable (calculate from level 1 effect) after buying the effect (-1 to disable refund)
+  autoActivate: true # auto activate the effect, if true effect will be auto activated after buying
+  # if false you need set it in activation config
+  #=====[array section]=====
+  # [<first upgrade level>, <second upgrade level>, ...]
+  durationPerUpgrade: [-1, -1] # duration of the effect per upgrade, -1 for infinite (in seconds)
+  cooldownPerUpgrade: [0, 0] # cooldown when using the effect per upgrade (in seconds)
+  costPerUpgrade: [10, 18] # cost when buying the effect per upgrade (Health Points)
+slowness:
+  enabled: true
+  name: "§bSlowness"
+  effect: "SLOWNESS"
+  lore: "Making Enemies Slower when enemy attacks you"
+  maxLevel: 3
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [5, 8, 10]
+  cooldownPerUpgrade: [60, 50, 40]
+  costPerUpgrade: [8, 12, 16]
+haste:
+  enabled: true
+  name: "§bHaste"
+  effect: "HASTE"
+  lore: "Making you faster when you mine"
+  maxLevel: 2
+  particles: false
+  saveEffectData: true
+  priceType: HEALTH
+  refundPercentage: -1
+  autoActivate: true
+  durationPerUpgrade: [-1, -1]
+  cooldownPerUpgrade: [0, 0]
+  costPerUpgrade: [8, 14]
+mining_fatigue:
+  enabled: true
+  name: "§bMining Fatigue"
+  effect: "MINING_FATIGUE"
+  lore: "Making enemy harder to mine"
+  maxLevel: 3
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [ 10, 13, 16 ]
+  cooldownPerUpgrade: [ 100, 90, 80 ]
+  costPerUpgrade: [ 8, 12, 16 ]
+strength:
+  enabled: true
+  name: "§bStrength"
+  effect: "STRENGTH"
+  lore: "Increases melee damage"
+  maxLevel: 3
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: true
+  durationPerUpgrade: [-1, -1, -1]
+  cooldownPerUpgrade: [0, 0, 0]
+  costPerUpgrade: [18, 30, 44]
+instant_health:
+  enabled: false
+  name: "§bInstant Health"
+  effect: "INSTANT_HEALTH"
+  lore: "Heals living entities instantly"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: HEALTH
+  refundPercentage: -1
+  autoActivate: false
+  durationPerUpgrade: [1]
+  cooldownPerUpgrade: [30]
+  costPerUpgrade: [10]
+instant_damage:
+  enabled: false
+  name: "§bInstant Damage"
+  effect: "INSTANT_DAMAGE"
+  lore: "Damages living entities instantly"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: HEALTH
+  refundPercentage: -1
+  autoActivate: false
+  durationPerUpgrade: [1]
+  cooldownPerUpgrade: [30]
+  costPerUpgrade: [10]
+jump_boost:
+  enabled: true
+  name: "§bJump Boost"
+  effect: "JUMP_BOOST"
+  lore: "Increases jump height and reduces fall damage"
+  maxLevel: 2
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20, 30]
+  cooldownPerUpgrade: [50, 40]
+  costPerUpgrade: [8, 14]
+nausea:
+  enabled: true
+  name: "§bNausea"
+  effect: "NAUSEA"
+  lore: "Warps and wobbles the screen"
+  maxLevel: 2
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10, 13]
+  cooldownPerUpgrade: [100, 90]
+  costPerUpgrade: [10, 16]
+regeneration:
+  enabled: false
+  name: "§bRegeneration"
+  effect: "REGENERATION"
+  lore: "Regenerates health over time"
+  maxLevel: 2
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20, 30]
+  cooldownPerUpgrade: [30, 25]
+  costPerUpgrade: [10, 16]
+resistance:
+  enabled: true
+  name: "§bResistance"
+  effect: "RESISTANCE"
+  lore: "Reduces damage taken"
+  maxLevel: 2
+  particles: false
+  saveEffectData: true
+  priceType: HEALTH
+  refundPercentage: -1
+  autoActivate: false
+  durationPerUpgrade: [20, 25]
+  cooldownPerUpgrade: [50, 40]
+  costPerUpgrade: [20, 40]
+fire_resistance:
+  enabled: true
+  name: "§bFire Resistance"
+  effect: "FIRE_RESISTANCE"
+  lore: "Immune to fire and lava damage"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [40]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [12]
+water_breathing:
+  enabled: true
+  name: "§bWater Breathing"
+  effect: "WATER_BREATHING"
+  lore: "Prevents drowning underwater"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [30]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [12]
+invisibility:
+  enabled: true
+  name: "§bInvisibility"
+  effect: "INVISIBILITY"
+  lore: "Makes you invisible"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [20]
+blindness:
+  enabled: true
+  name: "§bBlindness"
+  effect: "BLINDNESS"
+  lore: "Impairs vision and disables sprint"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [5]
+  cooldownPerUpgrade: [50]
+  costPerUpgrade: [16]
+night_vision:
+  enabled: true
+  name: "§bNight Vision"
+  effect: "NIGHT_VISION"
+  lore: "See in darkness and underwater"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: true
+  durationPerUpgrade: [-1]
+  cooldownPerUpgrade: [0]
+  costPerUpgrade: [2]
+hunger:
+  enabled: true
+  name: "§bHunger"
+  effect: "HUNGER"
+  lore: "Increases food exhaustion"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [15]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [10]
+weakness:
+  enabled: true
+  name: "§bWeakness"
+  effect: "WEAKNESS"
+  lore: "Decreases melee damage"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [16]
+poison:
+  enabled: true
+  name: "§bPoison"
+  effect: "POISON"
+  lore: "Inflicts damage over time (cannot kill)"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [16]
+wither:
+  enabled: true
+  name: "§bWither"
+  effect: "WITHER"
+  lore: "Inflicts damage over time (can kill)"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [8]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [14]
+health_boost:
+  enabled: false
+  name: "§bHealth Boost"
+  effect: "HEALTH_BOOST"
+  lore: "Increases maximum health"
+  maxLevel: 2
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [30, 40]
+  cooldownPerUpgrade: [50, 45]
+  costPerUpgrade: [12, 16]
+absorption:
+  enabled: true
+  name: "§bAbsorption"
+  effect: "ABSORPTION"
+  lore: "Gives extra absorption hearts"
+  maxLevel: 5
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [180, 200, 220, 240, 260]
+  cooldownPerUpgrade: [300, 290, 280, 270, 260]
+  costPerUpgrade: [6, 10, 14, 18, 22]
+saturation:
+  enabled: true
+  name: "§bSaturation"
+  effect: "SATURATION"
+  lore: "Restores hunger and saturation"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [5]
+  cooldownPerUpgrade: [180]
+  costPerUpgrade: [20]
+glowing:
+  enabled: true
+  name: "§bGlowing"
+  effect: "GLOWING"
+  lore: "Outlines the affected entity"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [100]
+  costPerUpgrade: [12]
+levitation:
+  enabled: true
+  name: "§bLevitation"
+  effect: "LEVITATION"
+  lore: "Causes the entity to float upward"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [3]
+  cooldownPerUpgrade: [40]
+  costPerUpgrade: [10]
+luck:
+  enabled: false
+  name: "§bLuck"
+  effect: "LUCK"
+  lore: "Increases chance of better loot"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20]
+  cooldownPerUpgrade: [40]
+  costPerUpgrade: [10]
+unluck:
+  enabled: false
+  name: "§bBad Luck"
+  effect: "UNLUCK"
+  lore: "Decreases chance of good loot"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20]
+  cooldownPerUpgrade: [40]
+  costPerUpgrade: [10]
+slow_falling:
+  enabled: true
+  name: "§bSlow Falling"
+  effect: "SLOW_FALLING"
+  lore: "Decreases falling speed and negates fall damage"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [12]
+conduit_power:
+  enabled: true
+  name: "§bConduit Power"
+  effect: "CONDUIT_POWER"
+  lore: "Improves underwater vision and speed"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [30]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [16]
+dolphins_grace:
+  enabled: true
+  name: "§bDolphin's Grace"
+  effect: "DOLPHINS_GRACE"
+  lore: "Increases swimming speed"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [20]
+bad_omen:
+  enabled: true
+  name: "§bBad Omen"
+  effect: "BAD_OMEN"
+  lore: "Causes an ominous event upon entering a village"
+  maxLevel: 5
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [40, 50, 60, 70, 80]
+  cooldownPerUpgrade: [7200, 7200, 7200, 7200, 7200]
+  costPerUpgrade: [14, 18, 22, 26, 30]
+hero_of_the_village:
+  enabled: false
+  name: "§bHero of the Village"
+  effect: "HERO_OF_THE_VILLAGE"
+  lore: "Gives discounts on trades with villagers"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [40]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [10]
+darkness:
+  enabled: true
+  name: "§bDarkness"
+  effect: "DARKNESS"
+  lore: "Adds a pulsating darkening effect"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [5]
+  cooldownPerUpgrade: [50]
+  costPerUpgrade: [16]
+trial_omen:
+  enabled: false
+  name: "§bTrial Omen"
+  effect: "TRIAL_OMEN"
+  lore: "Transforms nearby trial spawners into ominous ones"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [40]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [10]
+raid_omen:
+  enabled: false
+  name: "§bRaid Omen"
+  effect: "RAID_OMEN"
+  lore: "Starts a raid at the player's location"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [40]
+  cooldownPerUpgrade: [60]
+  costPerUpgrade: [10]
+wind_charged:
+  enabled: false
+  name: "§bWind Charged"
+  effect: "WIND_CHARGED"
+  lore: "Emits a burst of wind upon death"
+  maxLevel: 1
+  particles: true
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [20]
+  cooldownPerUpgrade: [40]
+  costPerUpgrade: [10]
+weaving:
+  enabled: true
+  name: "§bWeaving"
+  effect: "WEAVING"
+  lore: "Spreads cobweb blocks upon death"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [30]
+  costPerUpgrade: [12]
+oozing:
+  enabled: true
+  name: "§bOozing"
+  effect: "OOZING"
+  lore: "Spawns 2 slimes upon death"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [30]
+  costPerUpgrade: [12]
+infested:
+  enabled: true
+  name: "§bInfested"
+  effect: "INFESTED"
+  lore: "10% chance to spawn silverfish when hurt"
+  maxLevel: 1
+  particles: false
+  saveEffectData: true
+  priceType: MAX_HEALTH
+  refundPercentage: 50
+  autoActivate: false
+  durationPerUpgrade: [10]
+  cooldownPerUpgrade: [30]
+  costPerUpgrade: [12]
+

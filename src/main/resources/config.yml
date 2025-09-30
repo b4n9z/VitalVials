@@ -1,0 +1,17 @@
+effects: effects.yml # Path to the effects.yml file that contains the effects list
+activation: activation.yml # Activation settings
+maxHP: # max HP
+  enabled: true # Enable / Disable max HP, when enabled players can't get more HP when trying to Refund Effect, so player can't get more HP that you set
+  value: 20 # Max HP (Health Points)
+minHP: 2 # Min HP (Health Points) to allow player not buying effect when HP is same or less than this
+scoreboard: # scoreboard settings
+  defaultShowScoreboard: true # Show scoreboard on right side by default (per player can disable it on their own using command if you give them access)
+  periodUpdate: 10 # period to update scoreboard (in seconds)
+permissionsAllPlayer:
+  reload: false # Allow reload command for all players
+  shop: true # Allow shop command for all players
+  buyEffect: true # Allow buyEffect command for all players
+  viewStatus: true # Allow viewStatus command for all players
+  scoreboard: true # Allow scoreboard command for all players
+  refundEffect: true # Allow refundEffect command for all players
+  removeData: false # Allow removeData command for all players

@@ -1,0 +1,51 @@
+ALL_ITEMS: # Effects to activate to your own with all items or no item
+  rightClick: [] # Effects to activate to your own on right click with all items or no item
+  leftClick: [] # Effects to activate to your own on left click with all items or no item
+  YouAreHittingEnemy: [] # Effects to activate when you are hitting an enemy with all items or no item
+  enemyHitYou: [poison, wither, darkness] # Effects to activate when an enemy hits you with all items or no item
+SWORD: # Item name (all type of swords)
+  rightClick: [resistance] # Effects to activate to your own on right click with the item
+  leftClick: [] # Effects to activate to your own on left click with the item
+  YouAreHittingEnemy: [nausea, weakness, weaving, oozing, infested] # Effects to activate when you are hitting an enemy with the item
+  enemyHitYou: [slowness, mining_fatigue] # Effects to activate when an enemy hits you with the item
+AXE: # Item name (all type of axes)
+  rightClick: [resistance]
+  leftClick: [water_breathing]
+  YouAreHittingEnemy: [blindness, hunger, weakness]
+  enemyHitYou: [slowness, mining_fatigue]
+PICKAXE: # Item name (all type of pickaxes)
+  rightClick: [saturation]
+  leftClick: [fire_resistance, conduit_power]
+  YouAreHittingEnemy: [blindness]
+  enemyHitYou: []
+SHOVEL: # Item name (all type of shovels)
+  rightClick: [absorption]
+  leftClick: [dolphins_grace]
+  YouAreHittingEnemy: [nausea, levitation]
+  enemyHitYou: []
+HOE: # Item name (all type of hoes)
+  rightClick: [invisibility, bad_omen]
+  leftClick: [bad_omen]
+  YouAreHittingEnemy: [nausea, levitation]
+  enemyHitYou: []
+MACE: # Item name
+  rightClick: [jump_boost]
+  leftClick: []
+  YouAreHittingEnemy: [weakness]
+  enemyHitYou: []
+BOW: # Item name
+  rightClick: []
+  leftClick: []
+  YouAreHittingEnemy: [slow_falling, glowing]
+  enemyHitYou: [glowing]
+ARROW: # Item name
+  rightClick: []
+  leftClick: []
+  YouAreHittingEnemy: [slow_falling, glowing]
+  enemyHitYou: [glowing]
+TRIDENT: # Item name
+  rightClick: []
+  leftClick: []
+  YouAreHittingEnemy: []
+  enemyHitYou: []
+
